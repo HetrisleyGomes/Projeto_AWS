@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {margin: 20px;}
+    </style>
+</head>
+<body>
+    <p><input type="button" value="Pegar todos os valores" id="fazerget" onclick="listar()"> | <input type="button" value="Pegar valor por chave" id="fazergetid" onclick="getid()">  <input type="text" name="id" id="id"></p>
+        
+    <fieldset style="width: 485px; height:200px;">
+        <label for="nome">Nome</label><input type="text" name="nome" id="nome"> <br>
+        <label for="email">E-Mail</label><input type="text" name="email" id="email"><br>
+        <label for="telefone">Telefone</label><input type="text" name="telefone" id="telefone"><br>
+        <input type="button" value="Salvar valores" id="fazerpost" onclick="set()">
+        <input type="button" value="Update valores" id="fazerupdate" onclick="update()">
+    </fieldset>
+    <fieldset style="width: 485px; height:200px; margin-top: 25px;">
+        <legend>Requisições</legend>
+        <div id="lista">
+
+        </div>
+    </fieldset>
+    
+    <script src="script.js"></script>
+</body>
+</html>
