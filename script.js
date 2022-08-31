@@ -1,5 +1,6 @@
 var lista_campo = document.getElementById('lista')
 var array;
+var endpoint = '';
 
 async function listar(){
 
@@ -7,7 +8,7 @@ async function listar(){
         "action": "LIST"
     }
     const datajson = JSON.stringify(body);
-    const req = await fetch('https://nirbzav44gokwrp3nr2l7nk3am0yekbb.lambda-url.us-east-1.on.aws/',{
+    const req = await fetch(endpoint,{
         method: "POST",
         headers: {
             accept: 'application/json',
@@ -43,7 +44,7 @@ async function getid(){
 
 
     const datajson = JSON.stringify(body);
-    const req = await fetch('https://nirbzav44gokwrp3nr2l7nk3am0yekbb.lambda-url.us-east-1.on.aws/',{
+    const req = await fetch(endpoint,{
         method: "POST",
         headers: {
             accept: 'application/json',
@@ -70,7 +71,7 @@ async function set(){
     console.log(body)
 
     const datajson = JSON.stringify(body);
-    const req = await fetch('https://nirbzav44gokwrp3nr2l7nk3am0yekbb.lambda-url.us-east-1.on.aws/',{
+    const req = await fetch(endpoint,{
         method: "POST",
         headers: {
             accept: 'application/json',
@@ -98,7 +99,7 @@ async function update(){
     console.log(body)
 
     const datajson = JSON.stringify(body);
-    const req = await fetch('https://nirbzav44gokwrp3nr2l7nk3am0yekbb.lambda-url.us-east-1.on.aws/',{
+    const req = await fetch(endpoint,{
         method: "POST",
         headers: {
             accept: 'application/json',
